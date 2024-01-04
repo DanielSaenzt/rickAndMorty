@@ -1,10 +1,10 @@
 # AppRickMorty
 Esta aplicación Angular utiliza PrimeNG y PrimeFlex para consumir la API de Rick and Morty. Permite a los usuarios:
 
-Ver el listado completo de todos los personajes de la serie.
-Acceder a detalles específicos de cada personaje, incluyendo información relevante y su imagen.
-Utilizar un filtro de búsqueda por nombre para encontrar rápidamente a un personaje específico.
-La interfaz de usuario está diseñada con PrimeNG y PrimeFlex para ofrecer una experiencia amigable e intuitiva al usuario mientras explora la amplia gama de personajes en la serie de Rick and Morty.
+1. Ver el listado completo de todos los personajes de la serie.
+2. Acceder a detalles específicos de cada personaje, incluyendo información relevante y su imagen.
+3. Utilizar un filtro de búsqueda por nombre para encontrar rápidamente a un personaje específico.
+4. La interfaz de usuario está diseñada con PrimeNG y PrimeFlex para ofrecer una experiencia amigable e intuitiva al usuario mientras explora la amplia gama de personajes en la serie de Rick and Morty.
 
 ## Descripción
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 14.2.13. Utiliza las librerias de PrimeNG en su versión 14.2.17 y PrimeFlex en su version 3.3.1 para la interfaz de usuario.
