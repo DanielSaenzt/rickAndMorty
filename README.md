@@ -25,7 +25,7 @@ Ejecute `ng serve` para un servidor de desarrollo. Navegue hasta `http://localho
 Vera la siguiente imagen en su navegador
 ![image](https://github.com/DanielSaenzt/rickAndMorty/assets/60766477/03251bfb-daf6-46d7-a83f-8e19a4476eb9)
 
-#Estructura de la aplicación
+# Estructura de la aplicación
 /src: Este directorio contiene todos los archivos fuente de la aplicación Angular.
   /app: Es el directorio principal donde se encuentra la mayor parte del código de la aplicación.
     /components: Aquí se encuentran los componentes de la aplicación. El componente llamado `character` para mostrar el listado de personajes.
