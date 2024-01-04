@@ -27,26 +27,14 @@ Vera la siguiente imagen en su navegador
 
 # Estructura de la aplicación
 
-. ├── /src
-. │   ├── /app
-. │   │   ├── /components
-. │   │        ├── character.module.ts
-. │   │   ├── /model
-. │   │   ├── /service
-. │   │   └── app.module.ts
-. │   ├── /assets
-. │   └── /environments 
-. │
-. ├── angular.json
-. ├── package.json
 
 1. src: Este directorio contiene todos los archivos fuente de la aplicación Angular.
 2. app: Es el directorio principal donde se encuentra la mayor parte del código de la aplicación.
-3. components: Aquí se encuentran los componentes de la aplicación. El componente llamado `character` para mostrar el listado de personajes.
+3. components: Aquí se encuentran los componentes de la aplicación. El componente llamado `character` para mostrar el listado de personajes. y tambien el module `character.module.ts` para la importacion de los componentes de `prime ng` y el provedor del servicio `rick-morty.service.ts`.
 4. model: En este directorio se encuentran las interfaces que actúan como modelos de datos. Lo cuales son   
           `character.ts` que define la estructura de un personaje y `episode.ts` que define la estructura de un episodio de Tick and Morty.
 5. service: Maneja peticiones a la API. En este directorio se encuentra el servicio 
-              rick-morty.service.ts que maneja las peticiones a la API de Rick and Morty relacionadas con los personajes, para listarlos y para buscar los episodios relacionados.
+              `rick-morty.service.ts` que maneja las peticiones a la API de Rick and Morty relacionadas con los personajes, para listarlos y para buscar los episodios relacionados.
 6. assets: Aquí se encuentran los archivos estáticos que la aplicación puede utilizar, como imágenes del logo de Rick and Morty y el portal que ellos utilizan.
 7. environments: Contiene los archivos de configuración específicos para cada entorno, como desarrollo o producción.
 
