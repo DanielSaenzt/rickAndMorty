@@ -1,0 +1,129 @@
+<p-toast position="top-right"></p-toast>
+
+<div class="container">
+    <img src="assets/images/logo.png" alt="Logo Rick and Morty">
+</div>
+
+<div class="flex align-items-center justify-content-center">
+    <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input pInputText type="text" placeholder="Search..." [(ngModel)]="params.name" (input)="searchCharacters()" />
+    </span>
+</div>
+<div class="grid grid-nogutter flex align-items-center justify-content-center" style="margin-top: 30px;">
+    <div class="col-8 md:col-6 lg:col-12 sm:col-12 xl:col-6 " *ngFor="let character of characters">
+
+        <div class="fadeinleft animation-duration-1000 flex align-items-center justify-content-center ">
+            <p-card #dt header="" styleClass="p-card-shadow"
+                [ngClass]="{ 'card-hidden': cardSelected === character.id }" class="cursor-pointer"
+                id="card-{{character.id}}" (click)="moveCard(character)">
+                <div class="grid">
+                    <div class="col-12 md:col-4 lg:col-6 sm:col-12">
+                        <img alt="Card" src="{{character.image}}">
+                    </div>
+
+                    <div class="col-12 md:col-4 lg:col-6 sm:col-12">
+                        <h3>{{character.name}} - {{character.species}}</h3> <br>
+                        <label>First seen in: </label>
+                        <span>{{character.origin.name}}</span>
+                        <br>
+                        <label>Last known location: </label>
+                        <span>{{character.location.name}}</span>
+                    </div>
+
+                </div>
+                <div *ngIf="cardSelected === character.id" class="portal">
+                    <img src="assets/images/portal.gif" alt="" />
+                </div>
+                <ng-template pTemplate="footer">
+                    <div class="flex justify-content-end flex-wrap">
+
+                        <div class="flex align-items-center justify-content-end">
+                            <span
+                                [class]="'badge status-' + (character.status ? character.status.toLowerCase() : '')">{{character.status}}</span>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-card>
+
+        </div>
+    </div>
+
+</div>
+
+<div>
+
+    <div class="flex justify-content-center flex-wrap ">
+        <div class="flex align-items-center justify-content-center gap-5">
+            <p-toolbar>
+                <div class="p-toolbar-group-center">
+                    <button pButton type="button" icon="pi pi-arrow-left" class="p-button-help p-button-rounded"
+                        (click)="prevPage()" [disabled]="params.page === 1" style="margin-right: 22px;"></button>
+                    <button pButton type="button" icon="pi pi-arrow-right" class="p-button-help p-button-rounded"
+                        (click)="nextPage()"></button>
+                </div>
+            </p-toolbar>
+        </div>
+    </div>
+
+
+</div>
+
+<p-dialog header="Additional Information" [(visible)]="showModal" [modal]="true" [style]="{width: '60vw'}"
+    [draggable]="false" [resizable]="false">
+    <ng-template pTemplate="content">
+        <div class="grid">
+            <div class="md:col-6 lg:col-4 sm:col-12 xl:col-4">
+                <div class="flex justify-content-center flex-wrap ">
+                    <div class="flex align-items-center justify-content-center gap-5">
+                        <img [src]="character.image" [alt]="character.image" *ngIf="character.image">
+                    </div>
+                </div>
+                <div class="flex justify-content-center flex-wrap ">
+                    <div class="flex align-items-center justify-content-center gap-5">
+                        <div class="field">
+
+                            <h3>{{character.name}} - <span
+                                    [class]="'badge status-' + (character.status ? character.status.toLowerCase() : '')">{{character.status}}</span>
+                            </h3>
+                            <label> <i class="pi pi-map-marker"></i>
+                                First seen in: </label>
+                            <span>{{character.origin.name}}</span>
+                            <br>
+                            <label><i class="pi pi-map-marker"></i>
+                                Last known location: </label>
+                            <span>{{character.location.name}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-6 lg:col-8 sm:col-12 xl:col-8">
+                <div class="grid">
+                    <div class="col-12">
+
+                        <h1>Episodes: </h1>
+                    </div>
+                </div>
+                <div class="grid grid-nogutter">
+                    <div class="col-12 md:col-6 lg:col-6 sm:col-12 xl:col-6 flex justify-content-center gap-1 md:gap-4 xl:gap-1"
+                        *ngFor="let episode of episodes">
+                        <p-card>
+
+                            <div class="grid">
+                                <div class="col-12 md:col-12 lg:col-12 sm:col-12 gap-4">
+                                    <i class="pi pi-youtube" style="  margin-left: 40%;"></i>
+                                    <h3>{{episode.name}}</h3>
+                                    <span>{{episode.episode}}</span>
+                                    <br>
+                                    <label>Air Date: </label>
+                                    <span>{{episode.air_date}}</span>
+                                </div>
+                            </div>
+                        </p-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ng-template>
+</p-dialog>

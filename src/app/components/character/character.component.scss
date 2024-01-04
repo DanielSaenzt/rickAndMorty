@@ -1,0 +1,241 @@
+
+:host ::ng-deep .p-card {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    background: linear-gradient(90deg, #2d0536, #010002);
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 0px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    min-width: 500px;
+    max-width: 500px;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+  }
+
+  :host ::ng-deep .p-card:hover{
+    transform: scale(1.05); /* Aumenta el tamaño en un 5% */
+
+  }
+
+  :host ::ng-deep .p-card label {
+    color: #AEF0FF;
+  }
+  :host ::ng-deep .p-card span{
+    color: #6b75ff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  :host ::ng-deep  .p-card .p-card-content {
+    padding: 0
+  }
+  :host ::ng-deep  .p-card .p-card-footer {
+    padding: 0.4rem 0 0 0;
+  }
+  
+  :host ::ng-deep .p-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 40px;
+    margin-right: 2px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    max-width: 100%;
+
+  }
+  
+
+.badge {
+    border-radius: 30px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .3px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+  }
+  
+  .badge.status-unknown {
+    background: #48005c;
+    color: #d12dfa
+  }
+
+  .badge.status-dead {
+    background: #2c0004;
+    color: #fd0000;
+  }
+  .badge.status-alive {
+    background: #033516;
+    color: #05ff86;
+  }
+
+  :host ::ng-deep .p-button.p-button-help, .p-buttonset.p-button-help > .p-button, .p-splitbutton.p-button-help > .p-button {
+    background: #033516;
+    color: #05ff86;
+    border: 1px solid #05ff86;
+    transition: transform 0.3s ease; 
+
+  }
+  
+
+  :host ::ng-deep .p-toolbar {
+    background: linear-gradient(90deg, #2d0536, #010002);
+    border: 1px solid #2d0536;
+    border-radius: 6px;
+  }
+  
+  :host ::ng-deep .p-toolbar .p-toolbar-separator {
+    margin: 0 0.5rem;
+  }
+
+  .portal {
+    position: fixed;
+    top: 100px; 
+    left: calc(50% - 100px); 
+    z-index: 1; 
+
+  }
+  .portal img{
+    width: 60%;
+  }
+
+  .card-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 1s, opacity 1s;
+  }
+
+  :host ::ng-deep .p-dialog .p-dialog-header {
+    background: linear-gradient(140deg, #060335, #88e23b);
+    color: #ffffff
+
+}
+
+  :host ::ng-deep .p-dialog .p-dialog-content{
+    background: linear-gradient(90deg, #2d0536, #010002);
+
+}
+
+:host ::ng-deep .p-dialog .p-dialog-content label {
+  color: #ffffff;
+  margin-right: 4px;
+
+}
+:host ::ng-deep .p-dialog .p-dialog-content h3 {
+  color: #ffffff;
+}
+:host ::ng-deep .p-dialog .p-dialog-content {
+  color: #05ff86;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+:host ::ng-deep .p-dialog .p-dialog-content img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 40px;
+  margin-right: 2px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  max-width: 100%;
+  margin-top: 10px;
+
+}
+
+:host ::ng-deep .p-dialog .p-dialog-content .p-card {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    background: linear-gradient(90deg, #0c6791, #003b57);
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 0px;
+    margin: 5px;
+    font-size: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    min-width: 170px;
+    max-width: 170px;
+    height: 150px;
+    transition: transform 0.3s ease; 
+  
+
+}
+
+
+:host ::ng-deep .p-dialog .p-dialog-content .p-card label {
+  color: #6b75ff;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+:host ::ng-deep .p-dialog .p-dialog-content p-card span{
+  color: #99e2bf;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+:host ::ng-deep .p-inputtext {
+  color: #ffffff;
+  background: linear-gradient(90deg, #2d0536, #010002);
+  border-color: #870ba3;
+  width: 600px;
+
+}
+.p-input-icon-left > i:first-of-type {
+  color: #05ff86;
+}
+::-webkit-input-placeholder {
+  color: #05ff86;
+}
+
+
+:host ::ng-deep  .p-inputtext:enabled:hover {
+  border-color: #2d0536;
+}
+:host ::ng-deep  .p-inputtext:enabled:focus {
+  box-shadow: 0 0 0 0.2rem #3d0b5f;
+  border-color: transparent;
+}
+.container{
+  height: 100%;
+  margin: 0px 0px 30px 0px; 
+  background-color: #010002;
+  text-align: center;
+  padding: 20px; 
+  border-radius: 0px 0px 30px 30px;
+
+}
+.container img{
+  width: 70%;
+
+}
+
+@media screen and (max-width: 600px) {
+  :host ::ng-deep .p-card {
+    min-width: 300px;
+    max-width: 300px;
+    margin-bottom: 30px;
+    align-self: center;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  :host ::ng-deep .p-inputtext {
+    width: 300px;
+  }
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
