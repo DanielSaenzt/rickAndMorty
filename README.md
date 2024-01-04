@@ -36,7 +36,7 @@ Si todo salio bien vera la aplicación en ejecución.
           `character.ts` que define la estructura de un personaje y `episode.ts` que define la estructura de un episodio de Tick and Morty.
 5. service: Maneja peticiones a la API. En este directorio se encuentra el servicio 
               `rick-morty.service.ts` que maneja las peticiones a la API de Rick and Morty relacionadas con los personajes, para listarlos y para buscar los episodios relacionados.
-6. assets: Aquí se encuentran los archivos estáticos que la aplicación puede utilizar, como imágenes del logo de Rick and Morty y el portal que ellos utilizan.
+6. assets: Aquí se encuentran los archivos estáticos que la aplicación puede utilizar, como imágenes del logo de Rick and Morty y el portal de la serie.
 7. environments: Contiene los archivos de configuración específicos para cada entorno, como desarrollo o producción.
 
     
