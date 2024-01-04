@@ -44,13 +44,16 @@ Vera la siguiente imagen en su navegador
 ### Listado de Personajes
 1. Al ingresar a http://localhost:4200/character, se mostrará un listado de los personajes de la serie Rick and Morty. Para navegar por la lista completa, se proporciona un sistema de paginación en la parte   
    inferior de la página, permitiendo explorar los diferentes personajes disponibles.
+   
    ![image](https://github.com/DanielSaenzt/rickAndMorty/assets/60766477/46c4e8b6-93bb-4407-9af0-e7c1cd1f2e93)
 ### Búsqueda de Personajes
 1. Búsqueda por Nombre: Para encontrar un personaje específico, utiliza la barra de búsqueda ubicada en la interfaz. Ingresa el nombre del personaje que deseas buscar y la aplicación filtrará automáticamente los   
    resultados para mostrarte coincidencias.
+   
    ![image](https://github.com/DanielSaenzt/rickAndMorty/assets/60766477/234ff7a0-9a8b-4e06-b06a-e27061db1818)
 ### Detalles de Personajes
 1. Visualización de Detalles: Haz clic en la tarjeta correspondiente al personaje que te interese para ver más detalles. Esto abrirá un modal con información adicional sobre ese personaje, como su nombre, estado, epidsodios en lso que aparece, entre otros datos relevantes.
+2. 
    ![image](https://github.com/DanielSaenzt/rickAndMorty/assets/60766477/f63a0b35-5d43-4afc-93fe-b6c0afb08b33)
 
 
