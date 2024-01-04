@@ -16,7 +16,7 @@ Para ejecutar esta aplicación en tu entorno local, asegúrate de cumplir con lo
 2. Angular CLI: Una vez que Node.js esté instalado, instala Angular CLI globalmente usando el siguiente comando en la terminal:  `npm install -g @angular/cli@14.2.13`
    
 ## Pasos para ejecutar la aplicación
-1. Clona este repositorio a tu máquina local usando git clone [https://url-del-repositorio.git.](https://github.com/DanielSaenzt/rickAndMorty.git)
+1. Clona este repositorio a tu máquina local usando git clone [https://github.com/DanielSaenzt/rickAndMorty.git.](https://github.com/DanielSaenzt/rickAndMorty.git)
 2. Navega al directorio del proyecto: cd rickAndMorty.
 3. Instala las dependencias utilizando npm: `npm install`.
    
@@ -26,26 +26,31 @@ Vera la siguiente imagen en su navegador
 ![image](https://github.com/DanielSaenzt/rickAndMorty/assets/60766477/03251bfb-daf6-46d7-a83f-8e19a4476eb9)
 
 # Estructura de la aplicación
-/src: Este directorio contiene todos los archivos fuente de la aplicación Angular.
-  /app: Es el directorio principal donde se encuentra la mayor parte del código de la aplicación.
-    /components: Aquí se encuentran los componentes de la aplicación. El componente llamado `character` para mostrar el listado de personajes.
-    /model: En este directorio se encuentran las interfaces que actúan como modelos de datos. Lo cuales son   
-          `character.ts` que define la estructura de un personaje y `episode.ts` que define la estructura de un episodio de Tick and Morty.
-    /service: Maneja peticiones a la API. En este directorio se encuentra el servicio 
-              rick-morty.service.ts que maneja las peticiones a la API de Rick and Morty relacionadas con los personajes, para listarlos y para buscar los episodios relacionados.
-  /assets: Aquí se encuentran los archivos estáticos que la aplicación puede utilizar, como imágenes del logo de Rick and Morty y el portal que ellos utilizan.
-  /environments: Contiene los archivos de configuración específicos para cada entorno, como desarrollo o producción.
 
-├── /src: Este directorio contiene todos los archivos fuente de la aplicación Angular.
-│   ├── /app: Es el directorio principal donde se encuentra la mayor parte del código de la aplicación.
-│   │   ├── /components:  Aquí se encuentran los componentes de la aplicación. El componente llamado `character` para mostrar el listado de personajes.
-│   │   ├── /model: En este directorio se encuentran las interfaces que actúan como modelos de datos. Lo cuales son   `character.ts` que define la estructura de un personaje y `episode.ts` que define la estructura de un episodio de Tick and Morty.
-│   │   ├── /service:  Maneja peticiones a la API. En este directorio se encuentra el servicio  rick-morty.service.ts que maneja las peticiones a la API de Rick and Morty relacionadas con los personajes, para listarlos y para buscar los episodios relacionados.
-│   │   
-│   ├── /assets: Aquí se encuentran los archivos estáticos que la aplicación puede utilizar, como imágenes del logo de Rick and Morty y el portal que ellos utilizan.
-│   └── /environments: Contiene los archivos de configuración específicos para cada entorno, como desarrollo o producción.
-│       
-│       
+├── /src
+│   ├── /app
+│   │   ├── /components
+│   │        ├── character.module.ts
+│   │   ├── /model
+│   │   ├── /service
+│   │   └── app.module.ts
+│   ├── /assets
+│   └── /environments 
+│
+├── angular.json
+├── package.json
+
+1. src: Este directorio contiene todos los archivos fuente de la aplicación Angular.
+2. app: Es el directorio principal donde se encuentra la mayor parte del código de la aplicación.
+3. components: Aquí se encuentran los componentes de la aplicación. El componente llamado `character` para mostrar el listado de personajes.
+4. model: En este directorio se encuentran las interfaces que actúan como modelos de datos. Lo cuales son   
+          `character.ts` que define la estructura de un personaje y `episode.ts` que define la estructura de un episodio de Tick and Morty.
+5. service: Maneja peticiones a la API. En este directorio se encuentra el servicio 
+              rick-morty.service.ts que maneja las peticiones a la API de Rick and Morty relacionadas con los personajes, para listarlos y para buscar los episodios relacionados.
+6. assets: Aquí se encuentran los archivos estáticos que la aplicación puede utilizar, como imágenes del logo de Rick and Morty y el portal que ellos utilizan.
+7. environments: Contiene los archivos de configuración específicos para cada entorno, como desarrollo o producción.
+
+    
 
 ## Manual de usuario
 ### Listado de Personajes
