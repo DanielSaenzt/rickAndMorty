@@ -27,18 +27,18 @@ Vera la siguiente imagen en su navegador
 
 # Estructura de la aplicación
 
-├── /src
-│   ├── /app
-│   │   ├── /components
-│   │        ├── character.module.ts
-│   │   ├── /model
-│   │   ├── /service
-│   │   └── app.module.ts
-│   ├── /assets
-│   └── /environments 
-│
-├── angular.json
-├── package.json
+. ├── /src
+. │   ├── /app
+. │   │   ├── /components
+. │   │        ├── character.module.ts
+. │   │   ├── /model
+. │   │   ├── /service
+. │   │   └── app.module.ts
+. │   ├── /assets
+. │   └── /environments 
+. │
+. ├── angular.json
+. ├── package.json
 
 1. src: Este directorio contiene todos los archivos fuente de la aplicación Angular.
 2. app: Es el directorio principal donde se encuentra la mayor parte del código de la aplicación.
