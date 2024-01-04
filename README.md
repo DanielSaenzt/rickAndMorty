@@ -22,7 +22,8 @@ Para ejecutar esta aplicación en tu entorno local, asegúrate de cumplir con lo
    
 ## Servidor de desarrollo
 Ejecute `ng serve` para un servidor de desarrollo. Navegue hasta `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia alguno de los archivos fuente.
-Vera la siguiente imagen en su navegador
+Si todo salio bien vera la aplicación en ejecución.
+
 ![image](https://github.com/DanielSaenzt/rickAndMorty/assets/60766477/03251bfb-daf6-46d7-a83f-8e19a4476eb9)
 
 # Estructura de la aplicación
